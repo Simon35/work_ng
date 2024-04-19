@@ -25,3 +25,21 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+créer un composant Liste produits
+créer un modèle données Product
+créer dans Liste produits la propriété listProducts et un tableau de produits
+créer un Produit component
+afficher un produit
+
+afficher la liste des produits
+@input permet de récupérer les données
+
+transmettre un like au composant parent
+@output
+ajouter un bouton like devant chaque produit (fils)
+créer un evenement entre le clic sur le btn et l'execution de la méthode increment du like
+
+sendNotif()
+@output envoyer un output vers le parent
+EventEmitter permet d'emettre des valeurs
