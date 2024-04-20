@@ -43,3 +43,6 @@ créer un evenement entre le clic sur le btn et l'execution de la méthode incre
 sendNotif()
 @output envoyer un output vers le parent
 EventEmitter permet d'emettre des valeurs
+
+Création de form
+ajouter une propriété appelé product
