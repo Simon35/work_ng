@@ -46,3 +46,7 @@ EventEmitter permet d'emettre des valeurs
 
 Création de form
 ajouter une propriété appelé product
+ajouter bootstrap
+
+dans le form, on ajoute un controle de validation
+id est obligatoire et ne contient que des chiffres

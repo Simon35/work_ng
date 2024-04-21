@@ -9,8 +9,9 @@ import { Product } from '../model/products';
 export class FormProductComponent implements OnInit {
 
   product!: Product;
+  
   ngOnInit(): void {
-    
+    this.product = new Product();
   }
 
 }

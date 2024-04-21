@@ -2,15 +2,23 @@
     <form>
         <div class="form-group">
             <label for="">Id</label>
-            <input type="number" name="id" id="" class="form-control">
+            <input type="text" name="id" id="" class="form-control" [(ngModel)]="product.id" #i="ngModel" required pattern="[0-9]+$">
+        </div>
+        <div class="alert alert-danger mt-2" *ngIf="i.invalid && i.touched">
+            <div *ngIf="i.errors?.['required']">
+                id is a required field
+            </div>
+            <div *ngIf="i.errors?.['pattern']">
+                Please enter an id Valid
+            </div>
         </div>
         <div class="form-group">
             <label for="">Title</label>
-            <input type="text" name="title" id="" class="form-control">
+            <input type="text" name="title" id="" class="form-control" [(ngModel)]="product.like">
         </div>
         <div class="form-group">
             <label for="">Quantity</label>
-            <input type="text" name="quantity" id="" class="form-control">
+            <input type="text" name="quantity" id="" class="form-control" [(ngModel)]="product.quantity">
         </div>
         <button class="btn btn-warning">
             Save
